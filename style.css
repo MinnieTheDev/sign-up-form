@@ -1,3 +1,13 @@
+.container {
+    display: flex;
+}
+
+div.left-panel {
+    width: 60vw;
+    height: 100vh;
+    background: pink url(images/leaves.avif);
+    margin-right: 20px;
+}
 form > div > div {
     display: flex;
     gap: 20px;
