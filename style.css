@@ -1,13 +1,45 @@
+@font-face {
+    font-family: 'starbornregular';
+    src: url('fonts/starborn.woff2') format('woff2'),
+         url('fonts/starborn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     display: flex;
 }
 
-div.left-panel {
-    width: 60vw;
+.left-panel {
+    width: 50vw;
     height: 100vh;
     background: pink url(images/leaves.avif);
     margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
 }
+
+.left-panel .bg {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 60%;
+    grid-area: 1/1;
+}
+
+.left-panel .logo {
+    width: 90px;
+    grid-area: 1/1;
+}
+
+.left-panel p {
+    color: white;
+    font: 3em "starbornregular", monospace;
+    grid-area: 1/1;
+}
+
 form > div > div {
     display: flex;
     gap: 20px;
